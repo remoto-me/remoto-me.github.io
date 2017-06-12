@@ -75,7 +75,7 @@ section {
 
 p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 20px;
   margin-bottom: 1.5rem;
 }
 
@@ -89,6 +89,29 @@ p {
 
 h1, h2, h3, h4 {
   font-family: "Montserrat", "Gotham", Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 56px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 48px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 200;
 }
 
 body > section {
@@ -120,10 +143,80 @@ body > section {
 }
 
 .section-pricing {
-  padding-bottom: 0;
   color: #fff;
   background-color: #347;
   background-image: linear-gradient(#627aaf, #347);
+  text-align: center;
+}
+
+.section-pricing > .footnote > p {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.section-pricing > .plans {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .section-pricing > .plans {
+    flex-direction: column;
+  }
+}
+
+.section-pricing > .plans > .plan {
+  width: 30%;
+}
+
+@media (max-width: 1024px) {
+  .section-pricing > .plans > .plan {
+    width: calc(8rem + 60%);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+}
+
+.section-pricing > .plans > .plan > .name {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 1rem;
+}
+
+.section-pricing > .plans > .plan > .price {
+  font-size: 72px;
+  line-height: 72px;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.section-pricing > .plans > .plan > .note {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-pricing > .plans > .plan > .button {
+  margin-bottom: 2rem;
+}
+
+.section-pricing > .plans > .plan > .features > li {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.section-pricing > .plans > .plan > .features > li:first-child {
+  font-weight: 700;
+  color: #fff;
 }
 
 .section-letter {
@@ -155,7 +248,8 @@ body > section {
 }
 
 .section-letter .letter {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   width: calc(8rem + 60%);
   padding-bottom: 4rem;
   border-radius: 2px;
@@ -171,14 +265,20 @@ body > section {
   }
 }
 
+.section-letter .letter > h1 {
+  margin-bottom: 4rem;
+  font-weight: 400;
+  color: #07c;
+}
+
 .section-letter .envelope:after, .section-letter .envelope:before {
   content: '';
   display: block;
   width: calc(8rem + 56vw);
   max-width: 100%;
-  height: 100vh;
   position: fixed;
   left: 50%;
+  top: 0;
   bottom: calc(-4vw - 2rem);
   transform: translateX(-50%);
   background-size: 100% auto;
@@ -226,6 +326,8 @@ body > section {
   padding-bottom: 0.5rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button:hover, .button:focus {

@@ -24,7 +24,8 @@
     transform: translateX(-50%)
 
   .letter
-    margin: 0 auto
+    margin-right: auto
+    margin-left: auto
     width: calc(#{$space-xl} + 60%)
     padding-bottom: $space-l
     border-radius: 2px
@@ -36,6 +37,11 @@
       max-width: 960px
       padding-bottom: $space-xl
 
+    > h1
+      margin-bottom: $space-l
+      font-weight: 400
+      color: $color-saphire
+
   .envelope
     &:after,
     &:before
@@ -43,9 +49,9 @@
       display: block
       width: calc(#{$space-xl} + 56vw)
       max-width: 100%
-      height: 100vh
       position: fixed
       left: 50%
+      top: 0
       bottom: calc(-4vw - #{$space-m})
       transform: translateX(-50%)
       background-size: 100% auto
