@@ -1,11 +1,3 @@
-// ./src/style/**/*.sass
-// ./src/js/*.js
-// ./src/view/*.slim
-// ----
-// ./css/*.css
-// ./js/*.js
-// ./*.html
-
 var gulp =  require('gulp');
 var sass = require('gulp-sass');
 var slim = require('gulp-slim');
@@ -26,8 +18,23 @@ gulp.task('sass', function() {
       includePaths: ['./src/style'],
       outputStyle: 'expanded'
     }))
+    .pipe(gulp.dest('./style'))
+});
+
+gulp.task('sass-minified', function() {
+  return gulp.src('./src/style/**/*.sass')
+    .pipe(plumber( { errorHandler: function(error) {
+      notify.onError({
+        title: "Gulp error in "+ error.plugin,
+        message: error.toString()
+      })(error);
+    }}))
+    .pipe(sass( {
+      includePaths: ['./src/style'],
+      outputStyle: 'expanded'
+    }))
     .pipe(minifyCSS())
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./style'))
 });
 
 gulp.task('slim', function() {
@@ -43,9 +50,13 @@ gulp.task('uglify', function() {
     .pipe(uglify())
     .pipe(gulp.dest('./js'))
 });
-//[ 'sass', 'js' ]
+
 gulp.task('watch', function() {
   gulp.watch('./src/style/**/*.sass', ['sass']);
-  gulp.watch('./src/js/**/*.js', ['js']);
   gulp.watch('./src/view/**/*.slim', ['slim']);
 });
+
+gulp.task('default', ['sass', 'slim', 'watch'] )
+
+gulp.task('release', ['sass-minified', 'uglify', 'slim', 'watch'] )
+
