@@ -1,5 +1,4 @@
 .button
-  border-radius: 4px
   padding-top: $space-xs
   padding-bottom: $space-xs
   padding-right: $space-m
@@ -7,10 +6,20 @@
   display: inline-block
   color: #fff
   background-color: $color-topaz
-  box-shadow: 0 2px 12px rgba(#000, 0.2)
+  box-shadow: 0 4px 16px rgba(#000, 0.2)
+  cursor: pointer
+  transition: all 0.2s ease
 
   &.-small
     padding-top: $space-xxs
     padding-bottom: $space-xxs
     padding-right: $space-s
     padding-left: $space-s
+
+  &:hover,
+  &:focus
+    background-color: mix(#000, $color-topaz, 5%)
+  
+  &:active
+    background-color: mix(#000, $color-topaz, 10%)
+    box-shadow: 0 2px 6px rgba(#000, 0.4)

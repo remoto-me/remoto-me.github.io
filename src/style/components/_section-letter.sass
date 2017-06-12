@@ -13,17 +13,28 @@
     left: 0
     height: $space-xxl + $space-xxl
     background-image: linear-gradient($color-darksaphire, transparent);
+    pointer-events: none
+    z-index: 3
+
+  .button
+    position: fixed
+    z-index: 2
+    bottom: calc(#{$space-s} + 2vw)
+    left: 50%
+    transform: translateX(-50%)
 
   .letter
     margin: 0 auto
     width: calc(#{$space-xl} + 60%)
+    padding-bottom: $space-l
+    border-radius: 2px
     background-color: #fff
     padding: 6vw
-    padding-bottom: $space-xxl
     box-shadow: 0 4px 16px rgba(#000, 0.2)
 
     +medium-up
       max-width: 960px
+      padding-bottom: $space-xl
 
   .envelope
     &:after,
@@ -44,7 +55,6 @@
     
       +medium-up
         max-width: 1024px
-        // bottom: calc(-#{$space-l})
 
       +huge-up
         bottom: calc(-#{$space-m})
