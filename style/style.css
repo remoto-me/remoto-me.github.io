@@ -372,9 +372,9 @@ body > section {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: calc(-2vw - 0.5rem);
-  height: calc(48px + 3vw);
-  width: calc(198px + 12vw);
+  margin-bottom: calc(-1vw - 0.5rem);
+  height: calc(24px + 3vw);
+  width: calc(96px + 12vw);
   background-image: url("../images/signature.svg");
   background-size: 100%;
   background-repeat: no-repeat;
