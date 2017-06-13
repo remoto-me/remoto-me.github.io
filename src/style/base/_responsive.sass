@@ -1,8 +1,8 @@
 // Breakopints
 
-$bp-small: 641px
-$bp-medium: 1024px
-$bp-large: 1440px
+$bp-small: 640px
+$bp-medium: 960px
+$bp-large: 1024px
 $bp-huge: 1920px
 
 // Mixins
@@ -21,13 +21,13 @@ $bp-huge: 1920px
     @content
 
 =medium-up
-  @media (min-width: $bp-small + 1px)
-    @content
-=large-up
   @media (min-width: $bp-medium + 1px)
     @content
-=huge-up
+=large-up
   @media (min-width: $bp-large + 1px)
+    @content
+=huge-up
+  @media (min-width: $bp-huge + 1px)
     @content
 
 =medium-down

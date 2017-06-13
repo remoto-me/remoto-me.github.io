@@ -16,14 +16,14 @@
     pointer-events: none
     z-index: 3
 
-  .button
+  > .button
     position: fixed
     z-index: 2
     bottom: calc(#{$space-s} + 2vw)
     left: 50%
     transform: translateX(-50%)
 
-  .letter
+  > .letter
     margin-right: auto
     margin-left: auto
     width: calc(#{$space-xl} + 60%)
@@ -41,8 +41,12 @@
       margin-bottom: $space-l
       font-weight: 400
       color: $color-saphire
+      +medium-down
+        font-size: $font-size-hecto
+        line-height: $line-height-hecto
+        margin-bottom: $space-m
 
-  .envelope
+  > .envelope
     &:after,
     &:before
       content: ''

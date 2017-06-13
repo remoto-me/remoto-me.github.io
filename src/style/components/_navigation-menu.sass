@@ -1,5 +1,66 @@
 .navigation-menu
-  background-color: $color-saphire
+  +container
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
   color: #fff
-  a
+  z-index: 3
+  transition: all 0.4s linear
+  height: $space-xxl
+  background-color: transparent
+  +small-only
+    padding-right: calc(#{$space-xxs} + 6vw)
+    padding-left: calc(#{$space-xxs} + 6vw)
+      
+  > a
+    +v-align
+    display: block
+    margin-left: calc(#{$space-xxs} + 2vw)
     color: #fff
+    font-size: $font-size-mili
+    line-height: $font-size-base
+    float: right
+    
+    +medium-up
+      font-size: $font-size-centi
+
+    &:first-child
+      float: left
+      margin-left: 0
+      margin-right: calc(#{$space-xxs} + 2vw)
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      font-family: $font-family-headings
+      transition transform 0.4s ease
+      transform-origin: 0 50%
+
+    &.link
+      +smart-underline ($color-saphire)
+      cursor: pointer
+      color: rgba(#fff, 0.8)
+      letter-spacing: 0.05em
+      font-weight: 400
+      &:hover,
+      &:focus,
+      &:active
+        color: #fff
+
+    &.button
+      +medium-down
+        display: none
+
+  &.-whenscroll
+    height: $space-l
+    background-color: $color-saphire
+    box-shadow: 0 2px 16px rgba(#000, 0.2)
+      
+  &:not(.-whenscroll)
+    > .button
+      display: none
+    > a:first-child
+      transform: scale(1.25) translateY(-50%)
+      +medium-up
+        transform: scale(1.5) translateY(-50%)
+      +large-up
+        transform: scale(2) translateY(-50%)

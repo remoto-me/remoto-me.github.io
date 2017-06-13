@@ -13,18 +13,19 @@ html
 
   body
 
-    nav.navigation-menu
-      a Remoto
-      a Product
-      a Pricing
-      a.button.-small.-small Start Free
+    nav#nav.navigation-menu
+      a href="#start" Remoto
+      a.link 800-736-6860
+      a.button.-tiny Start Free
+      a.link href="#pricing" Pricing
+      a.link href="#product" Product
 
-    section.section-hero
-      h1 Keep your team close and your clients closer
+    section#start.section-hero
+      h1 Keep your team close  and your clients closer
       h4 Remoto is an enjoyable and productive solution for sales and support teams to communicate with customers.
       a.button Start Free
 
-    section.section-features
+    section#product.section-features
       .feature
         h2 Your team on the same page
         p Great customer communication relies on internal coordination. With Remoto, your team share a common view of all customer interactions and stay always in sync.
@@ -35,7 +36,7 @@ html
         h2 Transform your business in 7 min.
         p Choose toll-free or local numbers from over 40 countries, invite your team members and get going in under 7 minutes. No need for the IT guy or hardware investments
     
-    section.section-pricing
+    section#pricing.section-pricing
       h1 Plans that suit your needs
       .plans
         .plan
@@ -90,3 +91,5 @@ html
         p.signature Fred Guth, Founder & CEO
         p P.S.  If you want to talk, just reach me at <a href="http://alpha.remoto.me/fred@remoto">alpha.remoto.me/fred@remoto.</a>
       .button Start Free
+
+    script src="js/scripts.js"
