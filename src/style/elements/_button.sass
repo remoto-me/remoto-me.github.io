@@ -31,10 +31,13 @@
     font-size: $font-size-mili
     line-height: $line-height-mili
 
-  &:hover,
-  &:focus
+  &:hover
     background-color: mix(#000, $color-topaz, 5%)
+
+  &:focus
+    background-color: mix(#000, $color-topaz, 10%)
+    box-shadow: 0 3px 11px rgba(#000, 0.3)
   
   &:active
-    background-color: mix(#000, $color-topaz, 10%)
+    background-color: mix(#000, $color-topaz, 15%)
     box-shadow: 0 2px 6px rgba(#000, 0.4)
