@@ -12,7 +12,7 @@
     right: 0
     left: 0
     height: $space-xxl + $space-xxl
-    background-image: linear-gradient($color-darksaphire, transparent);
+    background-image: linear-gradient($color-darksaphire, transparent)
     pointer-events: none
     z-index: 3
 
@@ -45,6 +45,36 @@
         font-size: $font-size-hecto
         line-height: $line-height-hecto
         margin-bottom: $space-m
+
+    > .signature,
+    > p:last-child
+      text-align: center
+
+    > .signature
+      &:before
+        content: ''
+        display: block
+        margin-right: auto
+        margin-left: auto
+        margin-bottom: calc(-2vw - #{$space-xxs})
+        height: calc(48px + 3vw)
+        width: calc(198px + 12vw)
+        background-image: url("../images/signature.svg")
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: center
+
+    > p:last-child
+      color: rgba(#000, 0.4)
+      > a
+        +smart-underline
+        &,
+        &:visited
+          color: $color-topaz
+        &:hover,
+        &:focus,
+        &:active
+          color: mix(#000, $color-topaz, 10%)
 
   > .envelope
     &:after,

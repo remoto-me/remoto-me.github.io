@@ -67,7 +67,7 @@ a {
 }
 
 ::selection {
-  background-color: rgba(255, 119, 85, 0.6);
+  background-color: #ffad99;
 }
 
 p {
@@ -185,13 +185,13 @@ body > section {
 }
 
 .navigation-menu > a.link::selection {
-  text-shadow: 0.03em 0 rgba(255, 119, 85, 0.6), -0.03em 0 rgba(255, 119, 85, 0.6), 0 0.03em rgba(255, 119, 85, 0.6), 0 -0.03em rgba(255, 119, 85, 0.6), 0.06em 0 rgba(255, 119, 85, 0.6), -0.06em 0 rgba(255, 119, 85, 0.6), 0.09em 0 rgba(255, 119, 85, 0.6), -0.09em 0 rgba(255, 119, 85, 0.6), 0.12em 0 rgba(255, 119, 85, 0.6), -0.12em 0 rgba(255, 119, 85, 0.6), 0.15em 0 rgba(255, 119, 85, 0.6), -0.15em 0 rgba(255, 119, 85, 0.6);
-  background: rgba(255, 119, 85, 0.6);
+  text-shadow: 0.03em 0 #ffad99, -0.03em 0 #ffad99, 0 0.03em #ffad99, 0 -0.03em #ffad99, 0.06em 0 #ffad99, -0.06em 0 #ffad99, 0.09em 0 #ffad99, -0.09em 0 #ffad99, 0.12em 0 #ffad99, -0.12em 0 #ffad99, 0.15em 0 #ffad99, -0.15em 0 #ffad99;
+  background: #ffad99;
 }
 
 .navigation-menu > a.link::-moz-selection {
-  text-shadow: 0.03em 0 rgba(255, 119, 85, 0.6), -0.03em 0 rgba(255, 119, 85, 0.6), 0 0.03em rgba(255, 119, 85, 0.6), 0 -0.03em rgba(255, 119, 85, 0.6), 0.06em 0 rgba(255, 119, 85, 0.6), -0.06em 0 rgba(255, 119, 85, 0.6), 0.09em 0 rgba(255, 119, 85, 0.6), -0.09em 0 rgba(255, 119, 85, 0.6), 0.12em 0 rgba(255, 119, 85, 0.6), -0.12em 0 rgba(255, 119, 85, 0.6), 0.15em 0 rgba(255, 119, 85, 0.6), -0.15em 0 rgba(255, 119, 85, 0.6);
-  background: rgba(255, 119, 85, 0.6);
+  text-shadow: 0.03em 0 #ffad99, -0.03em 0 #ffad99, 0 0.03em #ffad99, 0 -0.03em #ffad99, 0.06em 0 #ffad99, -0.06em 0 #ffad99, 0.09em 0 #ffad99, -0.09em 0 #ffad99, 0.12em 0 #ffad99, -0.12em 0 #ffad99, 0.15em 0 #ffad99, -0.15em 0 #ffad99;
+  background: #ffad99;
 }
 
 .navigation-menu > a.link:before, .navigation-menu > a.link:after, .navigation-menu > a.link *, .navigation-menu > a.link *:before, .navigation-menu > a.link *:after {
@@ -390,6 +390,66 @@ body > section {
   }
 }
 
+.section-letter > .letter > .signature,
+.section-letter > .letter > p:last-child {
+  text-align: center;
+}
+
+.section-letter > .letter > .signature:before {
+  content: '';
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: calc(-2vw - 0.5rem);
+  height: calc(48px + 3vw);
+  width: calc(198px + 12vw);
+  background-image: url("../images/signature.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-letter > .letter > p:last-child {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.section-letter > .letter > p:last-child > a {
+  color: inherit;
+  text-decoration: none;
+  background: -webkit-linear-gradient(currentColor, currentColor);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  text-shadow: 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  background-position-y: 90%;
+  background-position-x: 0%;
+}
+
+.section-letter > .letter > p:last-child > a::selection {
+  text-shadow: 0.03em 0 #ffad99, -0.03em 0 #ffad99, 0 0.03em #ffad99, 0 -0.03em #ffad99, 0.06em 0 #ffad99, -0.06em 0 #ffad99, 0.09em 0 #ffad99, -0.09em 0 #ffad99, 0.12em 0 #ffad99, -0.12em 0 #ffad99, 0.15em 0 #ffad99, -0.15em 0 #ffad99;
+  background: #ffad99;
+}
+
+.section-letter > .letter > p:last-child > a::-moz-selection {
+  text-shadow: 0.03em 0 #ffad99, -0.03em 0 #ffad99, 0 0.03em #ffad99, 0 -0.03em #ffad99, 0.06em 0 #ffad99, -0.06em 0 #ffad99, 0.09em 0 #ffad99, -0.09em 0 #ffad99, 0.12em 0 #ffad99, -0.12em 0 #ffad99, 0.15em 0 #ffad99, -0.15em 0 #ffad99;
+  background: #ffad99;
+}
+
+.section-letter > .letter > p:last-child > a:before, .section-letter > .letter > p:last-child > a:after, .section-letter > .letter > p:last-child > a *, .section-letter > .letter > p:last-child > a *:before, .section-letter > .letter > p:last-child > a *:after {
+  text-shadow: none;
+}
+
+.section-letter > .letter > p:last-child > a:visited {
+  color: inherit;
+}
+
+.section-letter > .letter > p:last-child > a, .section-letter > .letter > p:last-child > a:visited {
+  color: #f75;
+}
+
+.section-letter > .letter > p:last-child > a:hover, .section-letter > .letter > p:last-child > a:focus, .section-letter > .letter > p:last-child > a:active {
+  color: #e66b4d;
+}
+
 .section-letter > .envelope:after, .section-letter > .envelope:before {
   content: '';
   display: block;
@@ -442,6 +502,7 @@ body > section {
   line-height: 24px;
   font-weight: 500;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .button.-small {
