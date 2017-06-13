@@ -13,16 +13,16 @@ html
 
   body
 
-    nav#nav.navigation-menu
-      a href="#start" Remoto
+    nav.navigation-menu
+      a Remoto
       a.link 800-736-6860
       a.link href="#pricing" Pricing
       a.link href="#product" Product
 
-    section#start.section-hero
+    section.section-hero
       h1 Keep your team close  and your clients closer
       h4 Remoto is an enjoyable and productive solution for sales and support teams to communicate with customers.
-      a.button href="#" Start Free
+      a.button Start Free
 
     section#product.section-features
       .feature
@@ -42,7 +42,7 @@ html
           h2.name Free
           h3.price $0
           p.note Ta-dah! 🎉
-          a.button.-small href="#" Start Free
+          a.button.-small Start Free
           ul.features
             li Free Intra-company calls worldwide
             li 10k message storage
@@ -51,7 +51,7 @@ html
           h2.name Standard
           h3.price $20
           p.note per active user, per month
-          a.button.-small href="#" Buy Standard
+          a.button.-small Buy Standard
           ul.features
             li All features from the Free plan
             li 1 year message storage
@@ -62,7 +62,7 @@ html
           h2.name Enterprise
           h3.price $50
           p.note per active user, per month
-          a.button.-small href="#" Buy Enterprise
+          a.button.-small Buy Enterprise
           ul.features
             li All features from the Standard plan
             li Unlimited message storage
@@ -89,6 +89,16 @@ html
         p Yours,
         p.signature Fred Guth, Founder & CEO
         p P.S.  If you want to talk, just reach me at <a href="http://alpha.remoto.me/fred@remoto">alpha.remoto.me/fred@remoto.</a>
-      .button href="#" Start Free
+      .button Start Free
 
+    .cta-page
+      h1 We are happy to know you are interested
+      p Remoto is still being developed, but if you want to be one of the beta testers send us your email and we'll get you an invite ;)
+      form
+        label for="email" Your email
+        input#email type="text" placeholder="yourname@company.com"
+        input.button type="submit" value="Send"
+      #close-cta Close
+
+    / script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     script src="js/scripts.js"

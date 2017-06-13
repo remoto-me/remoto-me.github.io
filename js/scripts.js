@@ -1,11 +1,17 @@
-window.onscroll = function() {
-  var nav = document.getElementById('nav');
-  if ( window.pageYOffset > 64 ) {
-    nav.classList.add("-whenscroll");
-  } else {
-    nav.classList.remove("-whenscroll");
-  }
+var buttons = document.getElementsByClassName('button');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    document.body.classList.add('-open-cta');  
+  });
 }
+
+document.getElementById('close-cta').addEventListener('click', function() {
+  document.body.classList.remove('-open-cta');
+});
+
+document.body.addEventListener('keyup', function() {
+  document.body.classList.remove('-open-cta');
+})
 
 initSmoothScrolling();
 
@@ -17,47 +23,24 @@ function initSmoothScrolling() {
     stripHash(location.href) :
     location.href;
 
-  delegatedLinkHijacking();
-  //directLinkHijacking();
+  document.body.addEventListener('click', onClick, false);
 
-  function delegatedLinkHijacking() {
-    document.body.addEventListener('click', onClick, false);
+  function onClick(e) {
+    if (!isAnchor(e.target))
+      return;
 
-    function onClick(e) {
-      if (!isInPageLink(e.target))
-        return;
+    e.stopPropagation();
+    e.preventDefault();
 
-      e.stopPropagation();
-      e.preventDefault();
-
-      jump(e.target.hash, {
-        duration: duration,
-        callback: function() {
-          setFocus(e.target.hash);
-        }
-      });
-    }
+    jump(e.target.hash, {
+      duration: duration,
+      callback: function() {
+        setFocus(e.target.hash);
+      }
+    });
   }
 
-  function directLinkHijacking() {
-    [].slice.call(document.querySelectorAll('a'))
-      .filter(isInPageLink)
-      .forEach(function(a) {
-        a.addEventListener('click', onClick, false);
-      });
-
-    function onClick(e) {
-      e.stopPropagation();
-      e.preventDefault();
-
-      jump(e.target.hash, {
-        duration: duration,
-      });
-    }
-
-  }
-
-  function isInPageLink(n) {
+  function isAnchor(n) {
     return n.tagName.toLowerCase() === 'a' &&
       n.hash.length > 0 &&
       stripHash(n.href) === pageUrl;
@@ -65,10 +48,6 @@ function initSmoothScrolling() {
 
   function stripHash(url) {
     return url.slice(0, url.lastIndexOf('#'));
-  }
-
-  function isCssSmoothSCrollSupported() {
-    return 'scrollBehavior' in document.documentElement.style;
   }
 
   // Adapted from:
