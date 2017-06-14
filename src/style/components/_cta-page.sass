@@ -10,24 +10,19 @@
   opacity: 0
   pointer-events: none
   transition: all 0.3s ease
+  overflow: scroll
 
   > .container
-    transform: scale(0.4)
+    transform: scale(0.4) translateY(-50%)
     position: absolute
-    top: 8vw
-    bottom: 8vw
+    top: 50%
     right: 8vw
     left: 8vw
     padding: 8vh 8vw
     background-color: #fff
     box-shadow: 0 8px 32px rgba(#000, 0.2)
     transition: all 0.3s ease
-    overflow: scroll
     text-align: center
-
-    > h1,
-    > p
-      text-align: left
 
     > h1
       color: $color-saphire
@@ -73,4 +68,4 @@
     opacity: 1
     pointer-events: auto
     > .container
-      transform: scale(1)
+      transform: scale(1) translateY(-50%)

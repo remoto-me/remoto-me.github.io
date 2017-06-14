@@ -496,26 +496,20 @@ body > section {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
+  overflow: scroll;
 }
 
 .cta-page > .container {
-  transform: scale(0.4);
+  transform: scale(0.4) translateY(-50%);
   position: absolute;
-  top: 8vw;
-  bottom: 8vw;
+  top: 50%;
   right: 8vw;
   left: 8vw;
   padding: 8vh 8vw;
   background-color: #fff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  overflow: scroll;
   text-align: center;
-}
-
-.cta-page > .container > h1,
-.cta-page > .container > p {
-  text-align: left;
 }
 
 .cta-page > .container > h1 {
@@ -592,7 +586,7 @@ body > section {
 }
 
 .-open-cta .cta-page > .container {
-  transform: scale(1);
+  transform: scale(1) translateY(-50%);
 }
 
 .button {
