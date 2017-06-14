@@ -461,22 +461,40 @@ body > section {
 
 .cta-page {
   position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.cta-page > .container {
+  transform: scale(0.4);
+  position: absolute;
   top: 10vw;
   bottom: 10vw;
   right: 10vw;
   left: 10vw;
   padding: 10vw;
   background-color: #fff;
-  z-index: 4;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.4);
   transition: all 0.3s ease;
 }
 
-.cta-page > form > * {
+.cta-page > .container > #close-cta {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cta-page > .container > form > * {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .-open-cta {
@@ -486,6 +504,9 @@ body > section {
 .-open-cta .cta-page {
   opacity: 1;
   pointer-events: auto;
+}
+
+.-open-cta .cta-page > .container {
   transform: scale(1);
 }
 
