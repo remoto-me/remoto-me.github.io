@@ -345,6 +345,7 @@ body > footer {
   overflow: hidden;
   z-index: 1;
   padding-top: 32rem;
+  font-family: "Crimson Text", Times, serif;
   background-image: url("../images/pattern-dark.svg");
   background-repeat: repeat;
   background-position: center center;
@@ -361,7 +362,6 @@ body > footer {
   .section-letter {
     background-size: calc(16rem + 100vw) auto;
   }
-  font-family: "Crimson Text", Times, serif;
 }
 
 .section-letter .-bold {
