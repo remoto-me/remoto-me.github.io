@@ -5,6 +5,14 @@
   z-index: 1
   padding-top: $space-xxl + $space-xxl
   font-style: italic
+  background-image: url("../images/pattern-dark.svg")
+  background-repeat: repeat
+  background-position: center center
+  background-size: calc(#{$space-xxl} + 140vw) auto
+  +medium-up
+    background-size: calc(#{$space-xxl} + 120vw) auto
+  +large-up
+    background-size: calc(#{$space-xxl} + 100vw) auto
 
   &:after
     content: ''

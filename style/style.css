@@ -149,7 +149,9 @@ h4 {
   }
 }
 
-body > section {
+body > section,
+body > header,
+body > footer {
   padding-top: 8rem;
   padding-bottom: 8rem;
   padding-left: calc(1rem + 10vw);
@@ -343,6 +345,22 @@ body > section {
   z-index: 1;
   padding-top: 32rem;
   font-style: italic;
+  background-image: url("../images/pattern-dark.svg");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: calc(16rem + 140vw) auto;
+}
+
+@media (min-width: 961px) {
+  .section-letter {
+    background-size: calc(16rem + 120vw) auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .section-letter {
+    background-size: calc(16rem + 100vw) auto;
+  }
 }
 
 .section-letter:after {
@@ -483,6 +501,17 @@ body > section {
 .section-letter > .envelope:before {
   background-image: url("../images/letter-back.png");
   z-index: -1;
+}
+
+.section-footer {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 64px rgba(0, 0, 0, 0.2);
+}
+
+.section-footer > .column > * {
+  display: block;
 }
 
 .cta-page {
