@@ -4,7 +4,7 @@
   overflow: hidden
   z-index: 1
   padding-top: $space-xxl + $space-xxl
-  font-style: italic
+  font-family: $font-family-serif
   background-image: url("../images/pattern-dark.svg")
   background-repeat: repeat
   background-position: center center
@@ -13,6 +13,12 @@
     background-size: calc(#{$space-xxl} + 120vw) auto
   +large-up
     background-size: calc(#{$space-xxl} + 100vw) auto
+
+  .-bold
+    font-weight: 700
+
+  .-strike
+    text-decoration: line-through
 
   &:after
     content: ''
