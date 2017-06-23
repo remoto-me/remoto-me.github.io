@@ -249,8 +249,32 @@ body > footer {
 
 .section-hero {
   padding-top: 16rem;
+  padding-bottom: 16rem;
   color: #fff;
   background-color: #07c;
+  background-image: url("../images/pattern-blue.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (min-width: 961px) {
+  .section-hero:after {
+    content: '';
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    top: 0;
+    background-image: url("../images/mockup-hero.png");
+    background-position: center 16rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+  }
+  .section-hero > * {
+    margin-left: 45%;
+  }
 }
 
 .section-features {
