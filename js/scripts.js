@@ -1,17 +1,17 @@
-var buttons = document.getElementsByClassName('button');
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', function() {
-    document.body.classList.add('-open-cta');  
-  });
-}
+// var buttons = document.getElementsByClassName('button');
+// for (var i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener('click', function() {
+//     document.body.classList.add('-open-cta');  
+//   });
+// }
 
-document.getElementById('close-cta').addEventListener('click', function() {
-  document.body.classList.remove('-open-cta');
-});
+// document.getElementById('close-cta').addEventListener('click', function() {
+//   document.body.classList.remove('-open-cta');
+// });
 
-document.body.addEventListener('keyup', function() {
-  document.body.classList.remove('-open-cta');
-})
+// document.body.addEventListener('keyup', function() {
+//   document.body.classList.remove('-open-cta');
+// })
 
 initSmoothScrolling();
 
