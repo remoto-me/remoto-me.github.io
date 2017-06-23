@@ -114,7 +114,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 32px;
 }
 
@@ -132,7 +132,7 @@ h3 {
 
 @media (min-width: 961px) {
   h3 {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 48px;
   }
 }
@@ -254,12 +254,66 @@ body > footer {
 }
 
 .section-features {
+  padding-left: calc(0.5rem + 4vw);
+  padding-right: calc(0.5rem + 4vw);
   background-color: #fff;
+  overflow: hidden;
 }
 
 .section-features .feature {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-features .feature > h2 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.section-features .feature > p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #999999;
+}
+
+@media (min-width: 961px) {
+  .section-features .feature {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .section-features .feature:after {
+    content: '';
+    height: 40rem;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .section-features .feature:nth-child(odd) {
+    padding-right: 55%;
+  }
+  .section-features .feature:nth-child(odd):after {
+    right: -10%;
+  }
+  .section-features .feature:nth-child(even) {
+    padding-left: 55%;
+  }
+  .section-features .feature:nth-child(even):after {
+    left: -10%;
+  }
+  .section-features .feature:nth-child(1):after {
+    background-image: url("../images/mockup-feature1.png");
+  }
+  .section-features .feature:nth-child(2):after {
+    background-image: url("../images/mockup-feature2.png");
+  }
+  .section-features .feature:nth-child(3):after {
+    background-image: url("../images/mockup-illustration.png");
+  }
 }
 
 .section-pricing {
