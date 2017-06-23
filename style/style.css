@@ -345,7 +345,6 @@ body > footer {
   overflow: hidden;
   z-index: 1;
   padding-top: 32rem;
-  font-family: "Crimson Text", Times, serif;
   background-image: url("../images/pattern-dark.svg");
   background-repeat: repeat;
   background-position: center center;
@@ -401,6 +400,7 @@ body > footer {
   background-color: #fff;
   padding: 6vw;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  font-family: "Crimson Text", Times, serif;
 }
 
 @media (min-width: 961px) {
