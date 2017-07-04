@@ -336,7 +336,7 @@ body > footer {
     background-image: url("../images/mockup-feature2.png");
   }
   .section-features .feature:nth-child(3):after {
-    background-image: url("../images/mockup-illustration.png");
+    background-image: url("../images/mockup-feature3.svg");
   }
 }
 
