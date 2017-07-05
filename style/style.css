@@ -153,10 +153,10 @@ h4 {
 body > section,
 body > header,
 body > footer {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
   padding-left: calc(1rem + 10vw);
   padding-right: calc(1rem + 10vw);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   position: relative;
   z-index: 2;
 }
@@ -427,7 +427,8 @@ body > footer {
 }
 
 .section-legal {
-  margin: 4rem 6rem;
+  padding: calc(0.5rem + 8vw);
+  margin: 4vw 8vw;
   background: white;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
