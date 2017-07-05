@@ -426,6 +426,32 @@ body > footer {
   background-color: #5c6992;
 }
 
+.section-legal {
+  margin: 4rem 6rem;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.section-footer {
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 0 64px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-footer > .column {
+  width: 25%;
+  min-width: 8rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  flex-grow: 1;
+}
+
+.section-footer > .column > * {
+  display: block;
+}
+
 .section-letter {
   background-color: #347;
   position: relative;
@@ -597,26 +623,6 @@ body > footer {
 .section-letter > .envelope:before {
   background-image: url("../images/letter-back.png");
   z-index: -1;
-}
-
-.section-footer {
-  background-color: #fff;
-  display: flex;
-  box-shadow: 0 0 64px rgba(0, 0, 0, 0.2);
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.section-footer > .column {
-  width: 25%;
-  min-width: 8rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  flex-grow: 1;
-}
-
-.section-footer > .column > * {
-  display: block;
 }
 
 .cta-page {
