@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640px" height="640px" viewBox="0 0 640 640" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 640 640 640 640 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1-Copy">
+            <polygon id="Fill-1" fill="#FFFFFF" points="0 640 640 640 640 0 0 0"></polygon>
+            <g id="Group-35">
+                <path d="M8,8 C43.4,8 72,36.6 72,72 L56,72 C56,45.4 34.6,24 8,24 L8,8 Z" id="Fill-2" fill-opacity="0.200000018" fill="#DDCCAA"></path>
+                <path d="M568,88 L568,104 C594.6,104 616,125.4 616,152 L632,152 C632,116.6 603.4,88 568,88" id="Fill-4" fill-opacity="0.200000018" fill="#DDCCAA"></path>
+                <path d="M408,232 L424,232 C424,205.4 445.4,184 472,184 L472,168 C436.6,168 408,196.6 408,232" id="Fill-6" fill-opacity="0.200000018" fill="#DDCCAA"></path>
+                <path d="M328,552 L344,552 C344,525.4 365.4,504 392,504 L392,488 C356.6,488 328,516.6 328,552" id="Fill-8" fill-opacity="0.200000018" fill="#DDCCAA"></path>
+                <path d="M8,248 L8,264 C34.6,264 56,285.4 56,312 L72,312 C72,276.6 43.4,248 8,248" id="Fill-10" fill-opacity="0.200000018" fill="#DDCCAA"></path>
+                <path d="M232,168 L216,168 C216,194.6 194.6,216 168,216 L168,232 C203.4,232 232,203.4 232,168" id="Fill-12" fill-opacity="0.200000018" fill="#DDCCAA"></path>
+                <path d="M488,408 L488,424 C514.6,424 536,445.4 536,472 L552,472 C552,436.6 523.4,408 488,408" id="Fill-14" fill-opacity="0.200000018" fill="#DDCCAA"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-17"></g>
+                <polygon id="Fill-16" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="8 472 72 472 72 408 8 408"></polygon>
+                <polygon id="Fill-18" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="568 232 632 232 632 168 568 168"></polygon>
+                <polygon id="Fill-19" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="568 72 632 72 632 8 568 8"></polygon>
+                <polygon id="Fill-20" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="568 392 632 392 632 328 568 328"></polygon>
+                <path d="M200,484 C219.882,484 236,500.118 236,520 C236,539.882 219.882,556 200,556 C180.118,556 164,539.882 164,520 C164,500.118 180.118,484 200,484" id="Fill-21" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)"></path>
+                <polygon id="Fill-22" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="8 152 8 88 72 88"></polygon>
+                <polygon id="Fill-23" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="88 328 152 328 152 392"></polygon>
+                <polygon id="Fill-24" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="328 568 392 568 392 632"></polygon>
+                <polygon id="Fill-25" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="88 568 152 568 152 632"></polygon>
+                <polygon id="Fill-26" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="408 312 408 248 472 248"></polygon>
+                <polygon id="Fill-27" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="552 552 552 488 616 488"></polygon>
+                <polygon id="Fill-28" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="232 248 232 312 168 312"></polygon>
+                <polygon id="Fill-29" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="392 328 392 392 328 392"></polygon>
+                <polygon id="Fill-30" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="86.3413 97.6543 97.6543 86.3403 153.6573 142.3423 142.3433 153.6563"></polygon>
+                <polygon id="Fill-31" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="246.3403 337.6514 257.6543 326.3384 313.6563 382.3394 302.3423 393.6534"></polygon>
+                <polygon id="Fill-32" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="326.3398 257.6519 337.6528 246.3379 393.6548 302.3399 382.3418 313.6539"></polygon>
+                <polygon id="Fill-33" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="486.3379 382.3389 542.3409 326.3369 553.6539 337.6509 497.6509 393.6519"></polygon>
+                <polygon id="Fill-34" fill-opacity="0.200000018" fill="#DDCCAA" mask="url(#mask-2)" points="6.3433 542.3389 62.3453 486.3369 73.6593 497.6509 17.6573 553.6529"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
