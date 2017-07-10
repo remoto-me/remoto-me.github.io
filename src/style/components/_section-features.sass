@@ -13,6 +13,25 @@
       font-size: $font-size-deci
       line-height: $line-height-base
       color: hsl(0, 0%, 60%)
+    &:nth-child(1):after
+      background-image: url("../images/mockup-feature1.png")
+    &:nth-child(2):after
+      background-image: url("../images/mockup-feature2.png")
+    &:nth-child(3):after
+      background-image: url("../images/mockup-feature3.svg")
+    
+    +medium-down
+      padding-top: $space-m
+      padding-bottom: $space-m
+      &:after
+        content: ''
+        height: 60vh
+        width: 100%
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        display: block
+
     +medium-up
       padding-top: $space-xl
       padding-bottom: $space-xl
@@ -34,9 +53,3 @@
         padding-left: 55%
         &:after
           left: -10%
-      &:nth-child(1):after
-        background-image: url("../images/mockup-feature1.png")
-      &:nth-child(2):after
-        background-image: url("../images/mockup-feature2.png")
-      &:nth-child(3):after
-        background-image: url("../images/mockup-feature3.svg")
