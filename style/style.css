@@ -203,9 +203,6 @@ body > footer {
   float: left;
   margin-left: 0;
   margin-right: calc(0.5rem + 2vw);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: "Montserrat", "Gotham", Helvetica, sans-serif;
   transform-origin: 0 50%;
   transform: scale(1.25) translateY(-50%);
 }
@@ -301,6 +298,34 @@ body > footer {
   color: #999999;
 }
 
+.section-features .feature:nth-child(1):after {
+  background-image: url("../images/mockup-feature1.png");
+}
+
+.section-features .feature:nth-child(2):after {
+  background-image: url("../images/mockup-feature2.png");
+}
+
+.section-features .feature:nth-child(3):after {
+  background-image: url("../images/mockup-feature3.svg");
+}
+
+@media (max-width: 960px) {
+  .section-features .feature {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .section-features .feature:after {
+    content: '';
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+
 @media (min-width: 961px) {
   .section-features .feature {
     padding-top: 8rem;
@@ -328,15 +353,6 @@ body > footer {
   }
   .section-features .feature:nth-child(even):after {
     left: -10%;
-  }
-  .section-features .feature:nth-child(1):after {
-    background-image: url("../images/mockup-feature1.png");
-  }
-  .section-features .feature:nth-child(2):after {
-    background-image: url("../images/mockup-feature2.png");
-  }
-  .section-features .feature:nth-child(3):after {
-    background-image: url("../images/mockup-feature3.svg");
   }
 }
 
@@ -424,33 +440,6 @@ body > footer {
 .section-pricing > .plans > .plan.-soon > .button {
   cursor: default;
   background-color: #5c6992;
-}
-
-.section-legal {
-  padding: calc(0.5rem + 8vw);
-  margin: 4vw 8vw;
-  background: white;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-}
-
-.section-footer {
-  background-color: #fff;
-  display: flex;
-  box-shadow: 0 0 64px rgba(0, 0, 0, 0.2);
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.section-footer > .column {
-  width: 25%;
-  min-width: 8rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  flex-grow: 1;
-}
-
-.section-footer > .column > * {
-  display: block;
 }
 
 .section-letter {
@@ -624,6 +613,87 @@ body > footer {
 .section-letter > .envelope:before {
   background-image: url("../images/letter-back.png");
   z-index: -1;
+}
+
+.section-footer {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 64px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url("../images/pattern-light.svg");
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .section-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .section-footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.section-footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(#fff, transparent);
+  z-index: -1;
+}
+
+.section-footer > .column {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.section-footer > .column > a {
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+
+.section-footer > .column > a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.section-footer > .column > * {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.section-footer > .column > h4 {
+  color: #f75;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Gotham", Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.section-footer > .navigation-menu.column > a:first-child, .section-footer > .column > .logo {
+  font-size: 20px;
+}
+
+.section-legal {
+  padding: calc(0.5rem + 8vw);
+  margin: 4vw 8vw;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .cta-page {
@@ -803,4 +873,11 @@ body > footer {
 
 .button:active {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.logo, .navigation-menu > a:first-child, .section-footer > .column > .logo {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "Montserrat", "Gotham", Helvetica, sans-serif;
+  font-weight: 400;
 }

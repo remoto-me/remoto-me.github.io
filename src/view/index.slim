@@ -4,20 +4,24 @@ html
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
     title Remoto
-    meta name="description" content=""
+    meta name="description" content="Remoto is an enjoyable and productive solution for sales and support teams communicate with customers"
     meta name="author" content=""
-    meta name="keywords" content=""
+    meta name="keywords" content="Communication, VoIP, PBX, Team"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta property="og:title" content="Remoto"
+    meta property="og:description" content="Remoto is an enjoyable and productive solution for sales and support teams communicate with customers"
+    meta property="og:type" content="website"
+    meta property="og:url" content="http://remoto.me/"
+    meta property="og:image" content="./images/og-image.png"
     link rel="icon" type="image/png" href="./images/favicon.png"
-    link href="./style/style.css" rel="stylesheet" type='text/css'
 
   body
 
     nav.navigation-menu
-      a Remoto
+      a.logo Remoto
       a.link href="https://beta.remoto.me/auth/sign-in" target="_blank" Sign-in
       a.link href="#pricing" Pricing
-      a.link href="#product" Product
+      a.link href="#features" Features
 
 
     header.section-hero
@@ -33,7 +37,7 @@ html
     /     a.button.-cancel No, Thanks
     /     #close-cta Close
 
-    section#product.section-features
+    section#features.section-features
       .feature
         h2 Your team on the same page
         p Great customer communication relies on internal coordination. With Remoto, your team shares a common view of all customer interactions and stays always in sync.
@@ -99,27 +103,28 @@ html
         p.signature Fred Guth, Founder & CEO
         / p P.S.  If you want to talk, just reach me at <a href="https://beta.remoto.me/fred@remoto">remoto.me/fred@remoto.</a>
       a.button href="https://beta.remoto.me/auth/sign-up" target="_blank" Start Free
+      
+    footer.section-footer
+      .column
+        h4.logo Remoto
+        / a href="#" Blog
+        / a href="#" Facebook
+        / a href="#" Linkedin
+      .column
+        h4 About Remoto
+        a href="#features" Features
+        a href="#pricing" Pricing
+        a href="https://beta.remoto.me/auth/sign-in" target="_blank" Sign-in
+      .column
+        h4 Download Links
+        a href="https://s3.amazonaws.com/remoto-releases/squirrel.windows/x64/Remoto-1.1.54+Setup.exe" Windows App
+        a href="https://s3.amazonaws.com/remoto-releases/Remoto-1.1.53.dmg" macOS App
+        a href="https://s3.amazonaws.com/remoto-releases/Remoto_1.1.54_amd64.deb" Linux App
+      .column
+        h4 Support
+        / a href="#" 800-736-6860
+        / a mailto="hi@remoto.me" hi@remoto.me
+        a href="terms-of-service.html" target="_blank" Terms & Policies
 
-    / footer.section-footer
-    /   .column
-    /     a Remoto
-    /     a Blog
-    /     a Facebook
-    /     a Linkedin
-    /   .column
-    /     h4 Remoto
-    /     a Features
-    /     a Pricing
-    /   .column
-    /     h4 Download
-    /     a Desktop App
-    /     a Mobile App
-    /   .column
-    /     h4 Support
-    /     a 800-736-6860
-    /     a hi@remoto.me
-    /     a href="terms-of-service.html" target="_blank" Terms of Service
-    /     a href="terms-of-service.html" target="_blank" Privacy
-
-
+    link href="./style/style.css" rel="stylesheet" type='text/css'
     script src="js/scripts.js"
