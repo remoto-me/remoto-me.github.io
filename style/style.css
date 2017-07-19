@@ -171,7 +171,7 @@ body > footer {
   color: #fff;
   z-index: 3;
   transition: all 0.4s linear;
-  height: 16rem;
+  height: 12rem;
   background-color: transparent;
 }
 
@@ -245,7 +245,7 @@ body > footer {
 }
 
 .section-hero {
-  padding-top: 16rem;
+  padding-top: 12rem;
   padding-bottom: 16rem;
   color: #fff;
   background-color: #07c;
@@ -264,7 +264,7 @@ body > footer {
     position: absolute;
     top: 0;
     background-image: url("../images/mockup-hero.png");
-    background-position: center 16rem;
+    background-position: center 12rem;
     background-size: contain;
     background-repeat: no-repeat;
     left: 0;
